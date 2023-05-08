@@ -1,6 +1,35 @@
 <html>
-<head></head>
+<head>
+<style>
+nav{
+  background:pink;
+}
+div.parent{
+  display:grid;
+  grid-template-columns:20% 80% ;
+  min-height:100vh;
+  grid-gap:20px;
+}
+div.child{
+  background:purple;
+}
+.box{
+  width:100px;
+  height:100px;
+  background:yellow;
+  border:2px solid black;
+  padding:15px;
+  margin:15px;
+}
+</style>
+</head>
 <body>
-<h1>Hello </h1>
+<div class="parent">
+ <nav>Hello </nav>
+ <div class="child">
+World
+<div class="box">box</div>
+</div>
+</div>
 </body>
 </html>
